@@ -15,6 +15,8 @@
 		4D16A09E1E16794A0083589E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D16A09C1E16794A0083589E /* LaunchScreen.storyboard */; };
 		4D16A0A91E16794A0083589E /* ReusableClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D16A0A81E16794A0083589E /* ReusableClientTests.swift */; };
 		4D16A0B41E16794A0083589E /* ReusableClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D16A0B31E16794A0083589E /* ReusableClientUITests.swift */; };
+		4D16A0C21E168A910083589E /* RCModuleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D16A0C11E168A910083589E /* RCModuleScrollView.swift */; };
+		4D16A0C41E169E640083589E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D16A0C31E169E640083589E /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		4D16A0AF1E16794A0083589E /* ReusableClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReusableClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D16A0B31E16794A0083589E /* ReusableClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableClientUITests.swift; sourceTree = "<group>"; };
 		4D16A0B51E16794A0083589E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D16A0C11E168A910083589E /* RCModuleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCModuleScrollView.swift; sourceTree = "<group>"; };
+		4D16A0C31E169E640083589E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				4D16A0911E16794A0083589E /* AppDelegate.swift */,
 				4D16A0931E16794A0083589E /* FirstViewController.swift */,
 				4D16A0951E16794A0083589E /* SecondViewController.swift */,
+				4D16A0C31E169E640083589E /* HomeViewController.swift */,
+				4D16A0C11E168A910083589E /* RCModuleScrollView.swift */,
 				4D16A0971E16794A0083589E /* Main.storyboard */,
 				4D16A09A1E16794A0083589E /* Assets.xcassets */,
 				4D16A09C1E16794A0083589E /* LaunchScreen.storyboard */,
@@ -265,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D16A0C41E169E640083589E /* HomeViewController.swift in Sources */,
+				4D16A0C21E168A910083589E /* RCModuleScrollView.swift in Sources */,
 				4D16A0961E16794A0083589E /* SecondViewController.swift in Sources */,
 				4D16A0921E16794A0083589E /* AppDelegate.swift in Sources */,
 				4D16A0941E16794A0083589E /* FirstViewController.swift in Sources */,
