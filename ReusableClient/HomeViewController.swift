@@ -26,6 +26,8 @@ class HomeViewController: UIViewController {
       print(index)
     }
 
+//    moduleScrollView.delegate = self
+
 //    let label = UILabel()
 //    label.text = "test"
 //    label.backgroundColor = .black
@@ -57,3 +59,9 @@ class HomeViewController: UIViewController {
     */
 
 }
+
+//extension HomeViewController: UIScrollViewDelegate {
+//  func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+//    scrollView.contentOffset = CGPoint.zero
+//  }
+//}

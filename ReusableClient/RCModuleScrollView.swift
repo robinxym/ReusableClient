@@ -32,6 +32,15 @@ class RCModuleScrollView: UIScrollView, UIScrollViewDelegate {
   //    }
   //  }
 
+  var selectedTextColor: UIColor = .red
+  var unSelectedTextColor: UIColor = .black
+  private var selectedButtonIndex: Int = 0 {
+    didSet {
+      moduleButtons[oldValue].setTitleColor(unSelectedTextColor, for: .normal)
+      moduleButtons[selectedButtonIndex].setTitleColor(selectedTextColor, for: .normal)
+
+    }
+  }
   var moduleButtonDidClickClosure:  ((Int) -> ())?
   private var moduleButtons: [UIButton] = []
   private var moduleButtonWidth: CGFloat = 0.0
@@ -89,9 +98,11 @@ class RCModuleScrollView: UIScrollView, UIScrollViewDelegate {
     }
     contentSize = CGSize(width: paddingWidth + (moduleButtonWidth + paddingWidth) * CGFloat(moduleButtons.count), height: frame.height)
     contentInset = .zero
+    selectedButtonIndex = 0
   }
 
   @objc private func buttonDidClick(button: UIButton) {
+    selectedButtonIndex = button.tag
     if moduleButtonDidClickClosure != nil {
       moduleButtonDidClickClosure!(button.tag)
     }
